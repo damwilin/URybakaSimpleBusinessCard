@@ -1,0 +1,97 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="ScrollView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:fillViewport">true</item>
+    </style>
+
+    <style name="RelativeLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="HorizontalScrollView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LinearLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">@dimen/main_half_padding</item>
+    </style>
+
+    <style name="MainImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/main_image_height</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="Photo">
+        <item name="android:layout_height">@dimen/photo_height</item>
+        <item name="android:layout_width">@dimen/photo_width</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:padding">@dimen/main_half_padding</item>
+    </style>
+
+    <style name="Text">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:paddingLeft">@dimen/main_padding</item>
+    <item name="android:paddingRight">@dimen/main_padding</item>
+</style>
+
+    <style name="Text.Head">
+        <item name="android:textSize">@dimen/text_head</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:paddingTop">@dimen/main_padding</item>
+    </style>
+
+    <style name="Text.Subhead">
+        <item name="android:textSize">@dimen/text_subhead</item>
+        <item name="android:fontFamily">sans-serif-regular</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:paddingBottom">@dimen/main_padding</item>
+    </style>
+
+    <style name="Text.Description">
+        <item name="android:paddingTop">@dimen/main_padding</item>
+        <item name="android:textSize">@dimen/text_description</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Text.Tittle">
+        <item name="android:textSize">@dimen/text_tittle</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:paddingTop">@dimen/main_padding</item>
+    </style>
+
+    <style name="Text.List">
+        <item name="android:textSize">@dimen/text_list</item>
+        <item name="android:fontFamily">sans-serif-regular</item>
+        <item name="android:drawablePadding">@dimen/main_padding</item>
+        <item name="android:textColorLink">@color/colorPrimaryDark</item>
+        <item name="android:paddingBottom">@dimen/main_half_padding</item>
+        <item name="android:paddingTop">@dimen/main_half_padding</item>
+    </style>
+
+
+
+
+
+
+</resources>
