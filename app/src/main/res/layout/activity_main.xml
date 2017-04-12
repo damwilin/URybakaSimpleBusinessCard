@@ -1,94 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     style="@style/ScrollView"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.damian.simplebusinesscard.MainActivity">
-<RelativeLayout
-    android:id="@+id/relative_layout"
-    style="@style/RelativeLayout">
 
-    <ImageView
-        android:id="@+id/logo"
-        style="@style/MainImage"
-        android:src="@drawable/zdj_wew_logo"/>
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        style="@style/RelativeLayout">
 
-    <TextView
-        android:id="@+id/tittle_head"
-        style="@style/Text.Head"
-        android:layout_below="@id/logo"
-        android:text="@string/head"/>
-    <TextView
-        android:id="@+id/tittle_sub"
-        style="@style/Text.Subhead"
-        android:layout_below="@id/tittle_head"
-        android:text="@string/subhead"/>
+        <ImageView
+            android:id="@+id/logo"
+            style="@style/MainImage"
+            android:src="@drawable/zdj_wew_logo" />
 
-    <TextView
-        android:id="@+id/description"
-        style="@style/Text.Description"
-        android:layout_below="@id/tittle_sub"
-        android:text="@string/description"/>
+        <TextView
+            android:id="@+id/tittle_head"
+            style="@style/Text.Head"
+            android:layout_below="@id/logo"
+            android:text="@string/head" />
 
-    <TextView
-        android:id="@+id/tittle_photos"
-        style="@style/Text.Tittle"
-        android:text="@string/tittle_photos"
-        android:layout_below="@id/description"/>
+        <TextView
+            android:id="@+id/tittle_sub"
+            style="@style/Text.Subhead"
+            android:layout_below="@id/tittle_head"
+            android:text="@string/subhead" />
 
-    <HorizontalScrollView
-        android:id="@+id/scrollwiev_menu"
-        style="@style/HorizontalScrollView"
-        android:layout_below="@id/tittle_photos">
-        <LinearLayout
-            style="@style/LinearLayout">
+        <TextView
+            android:id="@+id/description"
+            style="@style/Text.Description"
+            android:layout_below="@id/tittle_sub"
+            android:text="@string/description" />
 
-            <ImageView
-                style="@style/Photo"
-                android:src="@drawable/menu1"/>
-            <ImageView
-                style="@style/Photo"
-                android:src="@drawable/menu2"/>
-            <ImageView
-                style="@style/Photo"
-                android:src="@drawable/menu3"/>
-            <ImageView
-                style="@style/Photo"
-                android:src="@drawable/menu4"/>
+        <TextView
+            android:id="@+id/tittle_photos"
+            style="@style/Text.Tittle"
+            android:layout_below="@id/description"
+            android:text="@string/tittle_photos" />
 
-        </LinearLayout>
-    </HorizontalScrollView>
+        <HorizontalScrollView
+            android:id="@+id/scrollwiev_menu"
+            style="@style/HorizontalScrollView"
+            android:layout_below="@id/tittle_photos">
 
-    <TextView
-        android:id="@+id/tittle_contact"
-        style="@style/Text.Tittle"
-        android:text="@string/tittle_contact"
-        android:layout_below="@id/scrollwiev_menu"/>
+            <LinearLayout style="@style/LinearLayout">
 
-    <TextView
-        android:id="@+id/text_phone"
-        style="@style/Text.List"
-        android:autoLink="phone"
-        android:text="@string/phone_number"
-        android:layout_below="@id/tittle_contact"
-        android:drawableLeft="@drawable/phone_black_18x18"/>
+                <ImageView
+                    style="@style/Photo"
+                    android:src="@drawable/menu1" />
 
-    <TextView
-        android:id="@+id/text_mail"
-        style="@style/Text.List"
-        android:autoLink="email"
-        android:text="@string/email"
-        android:layout_below="@id/text_phone"
-        android:drawableLeft="@drawable/contact_mail_black_18x18"/>
+                <ImageView
+                    style="@style/Photo"
+                    android:src="@drawable/menu2" />
 
-    <TextView
-        android:id="@+id/text_web"
-        style="@style/Text.List"
-        android:autoLink="web"
-        android:text="@string/facebook"
-        android:layout_below="@id/text_mail"
-        android:drawableLeft="@drawable/web_asset_black_18x18" />
-</RelativeLayout>
+                <ImageView
+                    style="@style/Photo"
+                    android:src="@drawable/menu3" />
+
+                <ImageView
+                    style="@style/Photo"
+                    android:src="@drawable/menu4" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tittle_contact"
+            style="@style/Text.Tittle"
+            android:layout_below="@id/scrollwiev_menu"
+            android:text="@string/tittle_contact" />
+
+        <TextView
+            android:id="@+id/opening_hours"
+            style="@style/Text.List"
+            android:layout_below="@id/tittle_contact"
+            android:autoLink="phone"
+            android:drawableLeft="@drawable/ic_schedule_black_18dp"
+            android:text="@string/opening_hours" />
+
+        <TextView
+            android:id="@+id/location"
+            style="@style/Text.List"
+            android:layout_below="@id/opening_hours"
+            android:drawableLeft="@drawable/ic_place_black_18dp"
+            android:onClick="showMapIntent"
+            android:text="@string/location" />
+
+        <TextView
+            android:id="@+id/text_phone"
+            style="@style/Text.List"
+            android:layout_below="@id/location"
+            android:autoLink="phone"
+            android:drawableLeft="@drawable/phone_black_18x18"
+            android:text="@string/phone_number" />
+
+        <TextView
+            android:id="@+id/text_mail"
+            style="@style/Text.List"
+            android:layout_below="@id/text_phone"
+            android:autoLink="email"
+            android:drawableLeft="@drawable/contact_mail_black_18x18"
+            android:text="@string/email" />
+
+        <TextView
+            android:id="@+id/text_web"
+            style="@style/Text.List.Last"
+            android:layout_below="@id/text_mail"
+            android:autoLink="web"
+            android:drawableLeft="@drawable/web_asset_black_18x18"
+            android:text="@string/facebook" />
+    </RelativeLayout>
 
 </ScrollView>

@@ -4,11 +4,9 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="main_padding">16dp</dimen>
     <dimen name="main_half_padding">8dp</dimen>
-
     <dimen name="main_image_height">300dp</dimen>
     <dimen name="photo_height">300dp</dimen>
     <dimen name="photo_width">300dp</dimen>
-
     <dimen name="text_head">24sp</dimen>
     <dimen name="text_subhead">16sp</dimen>
     <dimen name="text_description">14sp</dimen>

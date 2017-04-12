@@ -8,7 +8,6 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-
     <style name="ScrollView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
@@ -46,11 +45,11 @@
     </style>
 
     <style name="Text">
-    <item name="android:layout_width">match_parent</item>
-    <item name="android:layout_height">wrap_content</item>
-    <item name="android:paddingLeft">@dimen/main_padding</item>
-    <item name="android:paddingRight">@dimen/main_padding</item>
-</style>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/main_padding</item>
+        <item name="android:paddingRight">@dimen/main_padding</item>
+    </style>
 
     <style name="Text.Head">
         <item name="android:textSize">@dimen/text_head</item>
@@ -89,9 +88,8 @@
         <item name="android:paddingTop">@dimen/main_half_padding</item>
     </style>
 
-
-
-
-
+    <style name="Text.List.Last">
+        <item name="android:layout_marginBottom">@dimen/main_padding</item>
+    </style>
 
 </resources>
